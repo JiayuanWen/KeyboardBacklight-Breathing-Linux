@@ -32,7 +32,7 @@ do
 		# There will be multiple paths listed, you will have to experiment with each.
 		#
 		# Warning: Some path will cause screen blackout. This can be fixed by force restarting your pc.
-		# Be sure to save your works before you run the script.
+		# Be sure to save all your works before you run the script.
 		sudo /bin/sh -c "echo $BRIGHTNESS > <Path to keyboard backlight brightness conf>"
 
 		BRIGHTNESS=`expr $BRIGHTNESS - $BRIGHTNESS_DIFF`
@@ -56,7 +56,7 @@ do
 		# There will be multiple paths listed, you will have to experiment with each.
 		#
 		# Warning: Some path will cause screen blackout. This can be fixed by force restarting your pc.
-		# Be sure to save your works before you run the script.
+		# Be sure to save all your works before you run the script.
 		sudo /bin/sh -c "echo $BRIGHTNESS > <Path to keyboard backlight brightness file>"
 
 		BRIGHTNESS=`expr $BRIGHTNESS + $BRIGHTNESS_DIFF`
