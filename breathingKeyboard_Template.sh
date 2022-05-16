@@ -25,7 +25,7 @@ do
 	# Lights fade out
 	while [ "$CONTINUE_DESCEND" == "TRUE" ]
 	do
-		# Replace <Path to keyboard backlight brightness conf> with the file path to your keyboard 
+		# Replace "/Path/to/brightness" with the file path to your keyboard 
 		# backlight brightness configuration file.
 		#
 		# You can find your brightness config file path using the command "find / -name brightness".
@@ -33,7 +33,7 @@ do
 		#
 		# Warning: Some path will cause screen blackout. This can be fixed by force restarting your pc.
 		# Be sure to save all your works before you run the script.
-		sudo /bin/sh -c "echo $BRIGHTNESS > <Path to keyboard backlight brightness conf>"
+		sudo /bin/sh -c "echo $BRIGHTNESS > /Path/to/brightness"
 
 		BRIGHTNESS=`expr $BRIGHTNESS - $BRIGHTNESS_DIFF`
 
@@ -49,7 +49,7 @@ do
 	# Lights fade in
 	while [ "$CONTINUE_ASCEND" <= "TRUE" ]
 	do
-		# Replace <Path to keyboard backlight brightness conf> with the file path to your keyboard 
+		# Replace "/Path/to/brightness" with the file path to your keyboard 
 		# backlight brightness configuration file.
 		#
 		# You can find your brightness config file path using the command "find / -name brightness".
@@ -57,7 +57,7 @@ do
 		#
 		# Warning: Some path will cause screen blackout. This can be fixed by force restarting your pc.
 		# Be sure to save all your works before you run the script.
-		sudo /bin/sh -c "echo $BRIGHTNESS > <Path to keyboard backlight brightness file>"
+		sudo /bin/sh -c "echo $BRIGHTNESS > /Path/to/brightness"
 
 		BRIGHTNESS=`expr $BRIGHTNESS + $BRIGHTNESS_DIFF`
 
