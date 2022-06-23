@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 CONTINUE="TRUE"
 
@@ -19,6 +19,9 @@ BRIGHTNESS_MAX=100;
 # Adjust this value to change your keyboard backlight's minimum shown brightness. The value you set should always
 # be smaller than BRIGHTNESS_MAX.
 BRIGHTNESS_MIN=0;
+
+#Avoid password prompt from sudo, replace "yourpassword" with your root/sudo password
+echo "yourpassword" | sudo -S false
 
 while [ "$CONTINUE" == "TRUE" ]
 do
