@@ -1,9 +1,9 @@
+#!/bin/bash
+
 # This is the script I use for my Chromebook 15 (CB315-1HT-C9UA) laptop.
 # You can try run this script if you have the same laptop model but it is
 # hightly likely your keyboard backlight uses config file in different 
 # path for its brightness. 
-
-#!/bin/sh
 
 CONTINUE="TRUE"
 
@@ -16,6 +16,9 @@ BRIGHTNESS_DIFF=2;
 
 BRIGHTNESS_MAX=100;
 BRIGHTNESS_MIN=0;
+
+#Avoid password prompt from sudo
+echo "mypassword" | sudo -S echo "Password bypassed"
 
 while [ "$CONTINUE" == "TRUE" ]
 do
@@ -52,4 +55,3 @@ do
 	done
 
 done
-
