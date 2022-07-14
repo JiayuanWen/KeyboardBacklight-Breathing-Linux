@@ -3,7 +3,7 @@ Simple Linux shell script for making keyboard with monochrome backlight fade out
 \
 ![Keyboard backlight breathing demo](https://i.postimg.cc/ncLrFZhJ/breathing-Keyboard-DEMO.gif)
 
-<sub>Running this script comsume on average 3.2MB of RAM</sub>
+<sub>Warning: Running this script will wipe your /var/log/auth.log, if you need this log, do not run this script; Running this script comsume about 3.2MB of RAM, take this into consideration if you're low on RAM.</sub>
 <br>
 <br>
 ## Instruction
