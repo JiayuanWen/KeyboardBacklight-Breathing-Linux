@@ -37,7 +37,9 @@ do
 		# Warning: Some path will cause screen blackout. This can be fixed by force restarting your pc.
 		# Be sure to save all your works before you run the script.
 		sudo /bin/sh -c "echo $BRIGHTNESS > /Path/to/brightness"
-
+		# This script fills up auth.log, which will take up more space as time goes on. Flush just in case.
+		sudo /bin/sh -c "echo 0 > /var/log/auth.log"
+		
 		BRIGHTNESS=`expr $BRIGHTNESS - $BRIGHTNESS_DIFF`
 
 		sleep $SLEEP_TIME
@@ -61,6 +63,8 @@ do
 		# Warning: Some path will cause screen blackout. This can be fixed by force restarting your pc.
 		# Be sure to save all your works before you run the script.
 		sudo /bin/sh -c "echo $BRIGHTNESS > /Path/to/brightness"
+		# This script fills up auth.log, which will take up more space as time goes on. Flush just in case.
+		sudo /bin/sh -c "echo 0 > /var/log/auth.log"
 
 		BRIGHTNESS=`expr $BRIGHTNESS + $BRIGHTNESS_DIFF`
 
